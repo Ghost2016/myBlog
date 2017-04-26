@@ -2,7 +2,7 @@
 
 const nunjucks = require('nunjucks');
 
-function createEnv() {
+function createEnv(path, opts) {
     var
         //是否全局开启模板转义
         autoescape = opts.autoescape && true,
@@ -31,7 +31,7 @@ function templating(path, opts) {
     var env = createEnv(path, opts);
     return async (ctx,next) => {
         // 给ctx绑定render函数,方便在controller里面调用
-        ctx.render = function(){
+        ctx.render = function(view,model){
             // 把render后的内容赋值给response.body:
             ctx.response.body = env.render(view,Object.assign({},
             ctx.state || {},model || {}));
