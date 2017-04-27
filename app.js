@@ -4,9 +4,8 @@ const Koa = require('koa');
 const app = new Koa();
 const bodyParser = require('koa-bodyparser');
 const templating = require('./templating');
-const router = require('koa-router')();
-
-const isProduction = process.env.NODE_ENV ==='production'
+const controllers = require('./controllers');
+const isProduction = process.env.NODE_ENV ==='production';
 
 app.use(async (ctx,next) =>{
     //console.log(`Process $`)
@@ -25,18 +24,21 @@ app.use(templating('views',{
     noCache: !isProduction,
     watch: !isProduction
 }))
-router.get('/', async (ctx,next) =>{
-    console.log('log');
-    ctx.render('index.html',{
-        title:'Welcome'
-    })
-})
-router.get('/index', async (ctx,next) =>{
-    console.log('log');
-    ctx.render('index.html',{
-        title:'Welcome'
-    })
-})
-app.use(router.routes());
+// router.get('/', async (ctx,next) =>{
+//     console.log('log');
+//     ctx.render('index.html',{
+//         title:'Welcome'
+//     })
+// })
+// router.get('/index', async (ctx,next) =>{
+//     console.log('log');
+//     ctx.render('index.html',{
+//         title:'Welcome'
+//     })
+// })
+// app.use(router.routes());
+// console.log('__dirname:'+__dirname);
+// console.log('__filename:'+__filename);
+app.use(controllers());
 app.listen(8088);
 console.log('app started at port 8088...');
