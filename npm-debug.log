@@ -1,0 +1,139 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jslint' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData jslint
+8 silly fetchNamedPackageData jslint
+9 silly mapToRegistry name jslint
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://registry.npm.taobao.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'jslint',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'jslint',
+12 silly mapToRegistry   name: 'jslint',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://registry.npm.taobao.org/jslint
+14 verbose request uri http://registry.npm.taobao.org/jslint
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 14:11:12
+17 verbose request id 311385d28b1ad9b8
+18 http request GET http://registry.npm.taobao.org/jslint
+19 http 200 http://registry.npm.taobao.org/jslint
+20 verbose headers { server: 'nginx/1.4.6 (Ubuntu)',
+20 verbose headers   date: 'Thu, 27 Apr 2017 06:11:17 GMT',
+20 verbose headers   'content-type': 'application/json; charset=utf-8',
+20 verbose headers   'transfer-encoding': 'chunked',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-current-requests': '1',
+20 verbose headers   'x-readtime': '58',
+20 verbose headers   'content-encoding': 'gzip' }
+21 silly get cb [ 200,
+21 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+21 silly get     date: 'Thu, 27 Apr 2017 06:11:17 GMT',
+21 silly get     'content-type': 'application/json; charset=utf-8',
+21 silly get     'transfer-encoding': 'chunked',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-current-requests': '1',
+21 silly get     'x-readtime': '58',
+21 silly get     'content-encoding': 'gzip' } ]
+22 verbose get saving jslint to /Users/ghost/.npm/registry.npm.taobao.org/jslint/.cache.json
+23 verbose correctMkdir /Users/ghost/.npm correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule jslint@0.10.3 checking installable status
+37 silly cache add args [ 'jslint', null ]
+38 verbose cache add spec jslint
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'jslint',
+39 silly cache add   scope: null,
+39 silly cache add   escapedName: 'jslint',
+39 silly cache add   name: 'jslint',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed jslint@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for jslint
+42 info addNameTag [ 'jslint', 'latest' ]
+43 silly mapToRegistry name jslint
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry http://registry.npm.taobao.org/
+46 silly mapToRegistry data Result {
+46 silly mapToRegistry   raw: 'jslint',
+46 silly mapToRegistry   scope: null,
+46 silly mapToRegistry   escapedName: 'jslint',
+46 silly mapToRegistry   name: 'jslint',
+46 silly mapToRegistry   rawSpec: '',
+46 silly mapToRegistry   spec: 'latest',
+46 silly mapToRegistry   type: 'tag' }
+47 silly mapToRegistry uri http://registry.npm.taobao.org/jslint
+48 verbose addNameTag registry:http://registry.npm.taobao.org/jslint not in flight; fetching
+49 verbose get http://registry.npm.taobao.org/jslint not expired, no request
+50 silly addNameTag next cb for jslint with tag latest
+51 silly addNamed jslint@0.10.3
+52 verbose addNamed "0.10.3" is a plain semver version for jslint
+53 silly mapToRegistry name jslint
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry http://registry.npm.taobao.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'jslint',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'jslint',
+56 silly mapToRegistry   name: 'jslint',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri http://registry.npm.taobao.org/jslint
+58 verbose addRemoteTarball http://registry.npm.taobao.org/jslint/download/jslint-0.10.3.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'http://registry.npm.taobao.org/jslint/download/jslint-0.10.3.tgz',
+59 verbose addRemoteTarball   '890da3e79932edf06c5f4b52a7b5ba6436867436' ]
+60 info retry fetch attempt 1 at 14:11:17
+61 info attempt registry request try #1 at 14:11:17
+62 http fetch GET http://registry.npm.taobao.org/jslint/download/jslint-0.10.3.tgz
+63 http fetch 200 http://registry.npm.taobao.org/jslint/download/jslint-0.10.3.tgz
+64 silly fetchAndShaCheck shasum 890da3e79932edf06c5f4b52a7b5ba6436867436
+65 silly rollbackFailedOptional Starting
+66 silly rollbackFailedOptional Finishing
+67 silly runTopLevelLifecycles Finishing
+68 silly install printInstalled
+69 verbose stack Error: shasum check failed for /var/folders/m1/5ptmn5yx64z6wxk0hq_sfq0r0000gn/T/npm-40452-12a2ea5b/registry.npm.taobao.org/jslint/download/jslint-0.10.3.tgz
+69 verbose stack Expected: 890da3e79932edf06c5f4b52a7b5ba6436867436
+69 verbose stack Actual:   f52789062d63a6fc1b76f4da6e0ff2da9dba3952
+69 verbose stack From:     http://registry.npm.taobao.org/jslint/download/jslint-0.10.3.tgz
+69 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/sha/index.js:25:8
+69 verbose stack     at ReadStream.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/sha/index.js:72:7)
+69 verbose stack     at emitNone (events.js:91:20)
+69 verbose stack     at ReadStream.emit (events.js:185:7)
+69 verbose stack     at endReadableNT (_stream_readable.js:974:12)
+69 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:74:11)
+69 verbose stack     at process._tickCallback (internal/process/next_tick.js:98:9)
+70 verbose cwd /Users/ghost/Documents/blogRelated/myBlog
+71 error Darwin 16.3.0
+72 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "jslint"
+73 error node v6.9.1
+74 error npm  v3.10.8
+75 error shasum check failed for /var/folders/m1/5ptmn5yx64z6wxk0hq_sfq0r0000gn/T/npm-40452-12a2ea5b/registry.npm.taobao.org/jslint/download/jslint-0.10.3.tgz
+75 error Expected: 890da3e79932edf06c5f4b52a7b5ba6436867436
+75 error Actual:   f52789062d63a6fc1b76f4da6e0ff2da9dba3952
+75 error From:     http://registry.npm.taobao.org/jslint/download/jslint-0.10.3.tgz
+76 error If you need help, you may report this error at:
+76 error     <https://github.com/npm/npm/issues>
+77 verbose exit [ 1, true ]
